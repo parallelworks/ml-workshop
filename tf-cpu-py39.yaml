@@ -61,7 +61,7 @@ dependencies:
   - libnghttp2=1.57.0=h2d74bed_0
   - libpng=1.6.39=h5eee18b_0
   - libpq=17.4=hdbd6064_0
-  - libprotobuf=5.29.3=hc99497a_0
+  - libprotobuf=5.29.3=h3cdef7c_1
   - libsodium=1.0.18=h7b6447c_0
   - libssh2=1.11.1=h251f7ec_0
   - libstdcxx-ng=11.2.0=h1234567_1
@@ -187,7 +187,7 @@ dependencies:
       - more-itertools==10.7.0
       - multidict==6.5.0
       - namex==0.1.0
-      - oauthlib==3.2.2
+      - oauthlib==3.3.0
       - opt-einsum==3.4.0
       - optree==0.16.0
       - packaging==25.0
@@ -210,4 +210,4 @@ dependencies:
       - wrapt==1.17.2
       - xprof==2.20.1
       - yarl==1.20.1
-prefix: /home/sfgary.hpcmp/pw/software/.miniconda3c/envs/tf-cpu-py39
+prefix: /pw/apps/.miniconda3c/envs/tf-cpu-py39
