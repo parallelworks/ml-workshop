@@ -12,6 +12,11 @@ The main activities of this workshop are to:
 6. Track cost in near real time
 7. Launch MPI job via script_submitter (optional)
 
+## Help
+
+support@parallelworks.com
+[Parallel Works documentation](https://parallelworks.com/docs)
+
 ## Detailed steps
 
 ### 1) Login and start a personal cloud cluster
@@ -32,7 +37,22 @@ The main activities of this workshop are to:
 
 ### 2) Start notebook session on cluster
 
-
++ On the ACTIVATE Home page, click on the `JupyterLab` workflow tile
++ There is **no need to change** the fields on the workflow launch page - your one running cluster autopopulates.
++ Default settings include using cached software on `/pw/apps` to minimize JupyterLab startup time and bypass the need to install TensorFlow.
++ You are welcome to explore the options at some other time.
++ Click on the `Execute` button.
++ You can stay on the workflow launch status page, but it's more interesting to:
+  - go to your Home page
+  - notice your session is starting up (`Sessions` tile)...
+  - ...and the workflow is running (`Workflow Runs` tile)
+  - A **workflow** is just a series of automated steps.
+  - An **interactive session** is a special type of workflow whose steps include the setup for sending graphics from the cloud cluster to your ACTIVATE workspace.
+  - Workflows can also be purely computational (i.e. running a simulation) or even a mix of non-graphical and graphical applications.
+  - Workflows are defined in an easy to use `.yaml` format; this is beyond the scope of the workshop.
+  - click on the run number of the JupyterLab workflow (i.e. `00001`) to view the workflow progress and logs
+  - JupyterLab is ready when `Create session` has a green checkmark in the workflow viewer or there is a green light for the entry in the `Sessions` tile on ACTIVATE `Home`.
+![JupyterLab workflow viewer](images/workflow-viewer.png "JupyterLab workflow viewer")
 
 ### 3) Download notebook from public repository to cluster
 
