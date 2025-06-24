@@ -56,9 +56,17 @@ support@parallelworks.com
 
 ### 3) Download notebook from public repository to cluster
 
-In the terminal in your JupyterLab session, please run `git clone https://github.com/parallelworks/ml-workshop` to place a copy of this repository on your cluster.
++ Access your JupyterLab session on the head node of the cluster by clicking on its session in the `Session` tile on ACTIVATE `Home`.
++ Often, it's convenient to use the `Open in new tab` button to place the session in its own browser tab.
++ Use the JupyterLab launcher tab to start a terminal (you may need to scroll down)
++ In the terminal in your JupyterLab session, please run `git clone https://github.com/parallelworks/ml-workshop` to place a copy of this repository on your cluster.
++ You should see `ml-workshop` in the file browser portion (left sidebar) of JupyterLab
++ You are also welcome to run simple Linux terminal commands like `hostname`, `whoami`, `sinfo`, and `squeue` to verify that you are on the head node of a SLURM cluster.
+![JupyterLab screenshot](images/JupyterLab-screenshot.png "JupyterLab screenshot")
 
 ### 4) Run notebook on cluster
+
++ Start the notebook by clicking on `ml-workshop` in the JupyterLab file browser and then `
 
 ### 5) Copy files to different storage (bucket, workspace)
 
@@ -75,4 +83,5 @@ In the terminal in your JupyterLab session, please run `git clone https://github
   - set up the system paths to access OpenMPI, 
   - compile the hello world MPI source code provided here, and 
   - run the code over 4 CPUs distributed over two worker nodes.
-+ You can also copy and paste the contents of `run_mpitest.sh` into the `script_submitter` workflow's launch page to run the script on the cluster.
+  - You can check for the status of this multiple node job with `sinfo` and `squeue` in another terminal.
++ You can also copy and paste the contents of `run_mpitest.sh` into the `script_submitter` workflow's launch page to run the script on the cluster as if it were a formal workflow.
