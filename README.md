@@ -24,7 +24,7 @@ support@parallelworks.com
 
 ### 1) Login and start a personal cloud cluster
 + Log into the platform by going to [hpcmp-cloud.parallel.works](https://hpcmp-cloud.parallel.works).
-+ Change your password. Initial login can be complicated by:
++ Change your password immediately after this session. Initial login can be complicated by:
   - delayed/filtered password reset messages and
   - cannot use PED for MFA in certain locations.
 + On the `Home` page, go to the `Compute` tile and click on the `On button` for your default cluster.
