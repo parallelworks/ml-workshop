@@ -88,7 +88,15 @@ support@parallelworks.com
 
 + There are several __persistent__ storage options integrated with your __ephemeral__ cloud cluster.
 + `/pw/bbb` is a shared cloud bucket mounted to the cluster.
-+ For simplicity, this bucket is shared among all workshop participants; you can overwrite each other's files here! E.g. rename your notebook to your username and then copy it to `/pw/bbb`.
++ For simplicity, this bucket is shared among all workshop participants; you can overwrite each other's files here!
++ The example snippet below will write your username to a file with the same name in the bucket. It should be overwriting-safe since all the usernames are different.
+```
+# Create a file
+echo $USER > /pw/bbb/${USER}
+
+# Check if the file is created
+ls /pw/bbb/
+```
 + You can get short term credentials to the bucket and examples for use with standard CSP CLI tools by clicking on the `Buckets` tab on the left sidebar of your ACTIVATE `Home`, selecting the `bbb` bucket, and then clicking on the `Credentials` button in the upper right corner.
 + The home directory of your cluster is also mounted into your persistent ACTIVATE workspace. You can view the files by clicking on the `Editor` tab on the left sidebar. The `Editor` tab also opens an integrated development environment (IDE) associated with your private workspace on ACTIVATE.
 + You can upload/download files from your ACTIVATE workspace IDE to and from your local computer as well as drag and drop files in the file browser between clusters (i.e. each cloud or on-premise cluster connected to your ACTIVATE account can mount to your IDE). This functionality supports files up to 8GB in size. For larger files, using CSP CLI tools (e.g. `aws s3 ...`, `glcoud storage ...`, or `az storage ...`) or other data tools are recommended.
@@ -98,6 +106,7 @@ support@parallelworks.com
 + Go back to the ACTIVATE Home page.
 + Click on the `$ Cost` menu item on the left sidebar.
 + You may need to set the group to `ml-workshop` in the ribbon/filter bar across the top of the cost dashboard.
++ To see the spend assocaited with your account, click on `Filter Options`, select `User`, and select your username from the list.
 
 ### 7) Launch MPI job via script_submitter (optional)
 
