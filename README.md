@@ -15,6 +15,7 @@ The main activities of this workshop are to:
 ## Help
 
 support@parallelworks.com
+
 [Parallel Works documentation](https://parallelworks.com/docs)
 
 ## Detailed steps
@@ -66,9 +67,26 @@ support@parallelworks.com
 
 ### 4) Run notebook on cluster
 
-+ Start the notebook by clicking on `ml-workshop` in the JupyterLab file browser and then `
++ Start the notebook by clicking on `ml-workshop` in the JupyterLab file browser and then `cvae_example.ipynb`.
++ The notebook stores code, output, and error messages all in the same file.
++ The error messages here are totally normal.
++ Notebook cells can be run individually by selecting them and clicking on the `Play` icon (right pointing arrow head).
++ Or, you can go to the top menu and select `Kernel > Restart Kernel and Run All` to engage all the cells.
++ While running the steps of the notebook:
+  - This small example of generative AI trains a neural network to recognize handwritten digits (0-9).
+  - A citation, summary of the job, and an example of extending this approach to a bigger science application is presented at the top of the notebook.
+  - The training and visualization steps will each take a few minutes
+  - While they run, __if you have opened the JupyterLab session in its own tab__, you can go back to the ACTIVATE `Home` page on your original browser tab to verify your session/workflow is still running.
+  - You can monitor CPU/RAM/disk usage in near real time by selecting the `i` button on the line of your cluster in the `Compute` tile.
+  - Or, you can monitor resource usage in the terminal with `htop`, etc.
 
 ### 5) Copy files to different storage (bucket, workspace)
+
++ There are several __persistent__ storage options integrated with your __ephemeral__ cloud cluster.
++ `/pw/bbb` is a shared cloud bucket mounted to the cluster.
++ For simplicity, this bucket is shared among all workshop participants; you can overwrite each other's files here! E.g. rename your notebook to your username and then copy it to `/pw/bbb`.
++ You can get short term credentials to the bucket and examples for use with standard CSP CLI tools by clicking on the `Buckets` tab on the left sidebar of your ACTIVATE `Home`, selecting the `bbb` bucket, and then clicking on the `Credentials` button in the upper right corner.
++ The home directory of your cluster is also mounted into your persistent ACTIVATE workspace. You can view the files by clicking on the `Editor` tab on the left sidebar. The `Editor` tab also opens an integrated development environment (IDE) associated with your private workspace on ACTIVATE.
 
 ### 6) Track cost in near real time
 
