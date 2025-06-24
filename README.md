@@ -30,6 +30,7 @@ support@parallelworks.com
 + On the `Home` page, go to the `Compute` tile and click on the `On button` for your default cluster.
 + Cloud cluster startup takes ~2-5 minutes.
 + Please explore - but do **not** change - the configuration with the `i` button.
++ You may experiment with other cluster configurations after the workshop.
 + In particular, note that the cluster has the following parts:
   - a larger head node (best for running the notebook)
   - a small compute partition with two worker nodes that spin up elastically
@@ -43,7 +44,7 @@ support@parallelworks.com
 + On the ACTIVATE Home page, click on the `JupyterLab` workflow tile
 + There is **no need to change** the fields on the workflow launch page - your one running cluster autopopulates.
 + Default settings include using cached software on `/pw/apps` to minimize JupyterLab startup time and bypass the need to install TensorFlow.
-+ You are welcome to explore the options at some other time.
++ You are welcome to explore the options after the workshop.
 + Click on the `Execute` button.
 + You can stay on the workflow launch status page, but it's more interesting to:
   - go to your Home page
@@ -52,7 +53,7 @@ support@parallelworks.com
   - A **workflow** is just a series of automated steps.
   - An **interactive session** is a special type of workflow whose steps include the setup for sending graphics from the cloud cluster to your ACTIVATE workspace.
   - Workflows can also be purely computational (i.e. running a simulation) or even a mix of non-graphical and graphical applications.
-  - Workflows are defined in an easy to use `.yaml` format; this is beyond the scope of the workshop.
+  - Workflows are defined in an easy to use `.yaml` format; this is beyond the scope of the workshop but [PW documentation](https://parallelworks.com/docs) has more information.
   - click on the run number of the JupyterLab workflow (i.e. `00001`) to view the workflow progress and logs
   - JupyterLab is ready when `Create session` has a green checkmark in the workflow viewer or there is a green light for the entry in the `Sessions` tile on ACTIVATE `Home`.
 ![JupyterLab workflow viewer](images/workflow-viewer.png "JupyterLab workflow viewer")
@@ -72,13 +73,14 @@ support@parallelworks.com
 + Start the notebook by clicking on `ml-workshop` in the JupyterLab file browser and then `cvae_example.ipynb`.
 + The notebook stores code, output, and error messages all in the same file.
 + The error messages here are totally normal.
-+ Notebook cells can be run individually by selecting them and clicking on the `Play` icon (right pointing arrow head).
++ Notebook cells can be run individually by selecting them and clicking on the `Play` icon (right pointing arrowhead).
 + Or, you can go to the top menu and select `Kernel > Restart Kernel and Run All` to engage all the cells.
 + While running the steps of the notebook:
   - This small example of generative AI trains a neural network to recognize handwritten digits (0-9).
   - A citation, summary of the job, and an example of extending this approach to a bigger science application is presented at the top of the notebook.
   - The training and visualization steps will each take a few minutes
   - While they run, __if you have opened the JupyterLab session in its own tab__, you can go back to the ACTIVATE `Home` page on your original browser tab to verify your session/workflow is still running.
+  - If you haven't opened the JupyterLab session in its own tab, depending on your browser settings, your notebook can be interupted. If this happens, just open the notebook again and rerun it.
   - You can monitor CPU/RAM/disk usage in near real time by selecting the `i` button on the line of your cluster in the `Compute` tile.
   - Or, you can monitor resource usage in the terminal with `htop`, etc.
 
@@ -89,6 +91,7 @@ support@parallelworks.com
 + For simplicity, this bucket is shared among all workshop participants; you can overwrite each other's files here! E.g. rename your notebook to your username and then copy it to `/pw/bbb`.
 + You can get short term credentials to the bucket and examples for use with standard CSP CLI tools by clicking on the `Buckets` tab on the left sidebar of your ACTIVATE `Home`, selecting the `bbb` bucket, and then clicking on the `Credentials` button in the upper right corner.
 + The home directory of your cluster is also mounted into your persistent ACTIVATE workspace. You can view the files by clicking on the `Editor` tab on the left sidebar. The `Editor` tab also opens an integrated development environment (IDE) associated with your private workspace on ACTIVATE.
++ You can upload/download files from your ACTIVATE workspace IDE to and from your local computer as well as drag and drop files in the file browser between clusters (i.e. each cloud or on-premise cluster connected to your ACTIVATE account can mount to your IDE). This functionality supports files up to 8GB in size. For larger files, using CSP CLI tools (e.g. `aws s3 ...`, `glcoud storage ...`, or `az storage ...`) or other data tools are recommended.
 
 ### 6) Track cost in near real time
 
