@@ -28,6 +28,7 @@ The main activities of this workshop are to:
   - a mounted disk image at `/pw/apps`
   - a mounted shared bucket at `/pw/bbb`
   - the home directory of the cluster is mounted into your ACTIVATE user workspace.
+![Cluster schematic](images/cluster-schematic.png "Cluster Schematic")
 
 ### 2) Start notebook session on cluster
 
