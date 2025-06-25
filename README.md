@@ -13,6 +13,7 @@ The main activities of this workshop are to:
 5. Copy files to different storage (bucket, workspace)
 6. Track cost in near real time
 7. Launch MPI job via script_submitter (optional)
+8. Stop JupyterLab session and the cluster
 
 ## Help
 
@@ -117,3 +118,11 @@ ls /pw/bbb/
   - run the code over 4 CPUs distributed over two worker nodes.
   - You can check for the status of this multiple node job with `sinfo` and `squeue` in another terminal.
 + You can also copy and paste the contents of `run_mpitest.sh` into the `script_submitter` workflow's launch page to run the script on the cluster as if it were a formal workflow.
+
+### 8) Stop running workflows and clusters
+
++ When you are finished with the workshop, please shut down your ephemeral cloud cluster to avoid unnecessary costs.
++ On your ACTIVATE `Home`, click on the "do not enter" symbol next to the `JupyterLab` entry in the `Workflow runs` tile to stop the workflow. This action will also automatically cancel the associated `JupyterLab` session in the `Sessions` tile.
++ If you have started other workflows and you don't need to continue them, please cancel them in the same way as the `JupyterLab` workflow.
++ Technically, you don't need to cancel workflows and sessions before turning off a cluster, but it's generally best practice because some things get cleaned up in the background.
++ On your ACTIVATE `Home`, click the On/Off button next to your cluster so that the button goes from green to gray.
