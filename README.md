@@ -1,7 +1,10 @@
 # ml-workshop
+
 Machine learning workshop as an introduction to the Parallel Works ACTIVATE user experience. ACTIVATE is a single control plane for cloud and on-premise high performance resources.
 
-### Please find the link to the [Day 1 overview presentation here.](https://docsend.com/v/8yjtx/hpcmp-ml-workshop)
+### Please find the link to the <a href="https://docsend.com/v/8yjtx/hpcmp-ml-workshop" target="_blank">Day 1 overview presentation here.</a>
+
+### Please find the link to the <a href="https://docsend.com/v/8yjtx/hpcmp-ml-workshop-day2" target="_blank">Day 2 walkthrough presentation here.</a>
 
 ## Summary
 The main activities of this workshop are to:
