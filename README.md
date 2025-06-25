@@ -108,6 +108,7 @@ ls /pw/bbb/
 + Click on the `$ Cost` menu item on the left sidebar.
 + You may need to set the group to `ml-workshop` in the ribbon/filter bar across the top of the cost dashboard.
 + To see the spend assocaited with your account, click on `Filter Options`, select `User`, and select your username from the list.
++ With many users from the same group on the `Cost` page at the same time, it may be necessary to **refresh the page** when adjusting the filters (circle arrow button on browser).
 
 ### 7) Launch MPI job via script_submitter (optional)
 
